@@ -33,7 +33,7 @@ const backgrounds = {
 };
 
 const contactInformation = {
-  margin: '1.25em 0 0',
+  margin: '1em 0 0',
 };
 
 const fontFamilies = {
@@ -62,8 +62,10 @@ const headerContainer = {
   smallDesktop: {
     background: 'none',
     positionRight: '0',
-    padding: '1% 5% 5% 1%',
+    padding: '1%',
+    margin: '0 4.5% 4.5% 0',
     textAlign: 'right',
+    width: 'auto',
   },
 };
 
@@ -72,6 +74,7 @@ const headers = {
   fontWeight: '400',
   letterSpacing: '0.05em',
   textTransform: 'none',
+  margin: '.25em 0 0',
 };
 
 const links = {
