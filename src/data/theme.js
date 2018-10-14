@@ -1,0 +1,108 @@
+const _COLORS = {
+  black: '#222',
+  blue: '#003973',
+  brown: '#c9bda7',
+  white: '#fff',
+};
+
+const _FONT_FAMILIES = {
+  header: '"Roboto Condensed", Helvetica, Arial, sans-serif',
+  base: 'Roboto, Helvetica, Arial, sans-serif',
+};
+
+const _ZINDICES = {
+  bottom: 1,
+  middle: 5,
+  top: 10,
+};
+
+const app = {
+  backgroundColor: _COLORS.brown,
+  backgroundImageUrl: '/media/code-mobile.jpg',
+  fontFamily: _FONT_FAMILIES.base,
+  smallDesktop: {
+    backgroundImageUrl: '/media/code.jpg'
+  },
+};
+
+const backgrounds = {
+  backgroundPosition: '50% 22.5%',
+  smallDesktop: {
+    backgroundPosition: '0 50%',
+  },
+};
+
+const contactInformation = {
+  margin: '1.25em 0 0',
+};
+
+const fontFamilies = {
+  googleFonts: [{
+    name: 'Roboto',
+    weights: [100, 200],
+  }, {
+    name: 'Roboto Condensed',
+    weights: [400]
+  }]
+};
+
+const headerContainer = {
+  background: `linear-gradient(
+    179deg,
+    rgba(201,189,167,0) 0%,
+    rgba(201,189,167,0) 5%,
+    rgba(201,189,167,0.35) 18%,
+    rgba(201,189,167,0.45) 26%,
+    rgba(201,189,167,0.55) 34%,
+    rgba(201,189,167,0.8) 56%,
+    rgba(201,189,167,1) 88%,
+    rgba(201,189,167,1) 100%)
+  `,
+  padding: '7.5vh 0 2.5em',
+  smallDesktop: {
+    background: 'none',
+    positionRight: '0',
+    padding: '1% 5% 5% 1%',
+    textAlign: 'right',
+  },
+};
+
+const headers = {
+  fontFamily: _FONT_FAMILIES.header,
+  fontWeight: '400',
+  letterSpacing: '0.05em',
+  textTransform: 'none',
+};
+
+const links = {
+  fontColor: _COLORS.blue,
+  iconHeight: '40px',
+  iconWidth: '40px',
+  iconPadding: '5px',
+  iconBorder: `2px solid ${_COLORS.blue}`,
+  iconBorderRadius: '100%',
+  iconTransition: '0.25s all',
+  onActive: {
+    fontColor: _COLORS.white,
+    iconBackgroundColor: _COLORS.blue,
+  }
+};
+
+const subheaders = {
+  fontFamily: _FONT_FAMILIES.base,
+  letterSpacing: '0.05em',
+  margin: '0',
+};
+
+const theme = {
+  app,
+  backgrounds,
+  contactInformation,
+  fontFamilies,
+  headerContainer,
+  headers,
+  links,
+  subheaders,
+};
+
+export default theme;
