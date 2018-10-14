@@ -47,6 +47,7 @@ const fontFamilies = {
 };
 
 const headerContainer = {
+  position: 'fixed',
   background: `linear-gradient(
     179deg,
     rgba(201,189,167,0) 0%,
