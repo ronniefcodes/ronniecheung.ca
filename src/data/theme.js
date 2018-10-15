@@ -27,9 +27,21 @@ const app = {
 
 const backgrounds = {
   backgroundPosition: '50% 22.5%',
+  backgroundSize: 'cover',
   smallDesktop: {
     backgroundPosition: '0 50%',
   },
+};
+
+const carouselContent = {
+  positionBottom: 'auto',
+  positionLeft: '-100%',
+  positionRight: 'auto',
+  positionTop: '-100%',
+};
+
+const carouselNavButtons = {
+  fontColor: _COLORS.black,
 };
 
 const contactInformation = {
@@ -68,9 +80,14 @@ const headerContainer = {
     textAlign: 'right',
     width: 'auto',
   },
+  desktop: {
+    margin: '0 4.5% 4.5% 0',
+    padding: '1%',
+  },
 };
 
 const headers = {
+  fontColor: _COLORS.black,
   fontFamily: _FONT_FAMILIES.header,
   fontWeight: '400',
   letterSpacing: '0.05em',
@@ -86,13 +103,13 @@ const links = {
   iconBorder: `2px solid ${_COLORS.blue}`,
   iconBorderRadius: '100%',
   iconTransition: '0.25s all',
-  onActive: {
-    fontColor: _COLORS.white,
-    iconBackgroundColor: _COLORS.blue,
-  }
+  activeFontColor: _COLORS.white,
+  activeIconBorderColor: _COLORS.white,
+  activeIconBackgroundColor: _COLORS.blue,
 };
 
 const subheaders = {
+  fontColor: _COLORS.black,
   fontFamily: _FONT_FAMILIES.base,
   letterSpacing: '0.05em',
   margin: '0',
@@ -101,6 +118,8 @@ const subheaders = {
 const theme = {
   app,
   backgrounds,
+  carouselContent,
+  carouselNavButtons,
   contactInformation,
   fontFamilies,
   headerContainer,

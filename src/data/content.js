@@ -23,6 +23,16 @@ const config = {
     icon: 'download',
   }],
   projects: [{
+    title: 'Heineken Cities',
+    type: 'Contest Website',
+    year: 2015,
+    description: 'JQuery',
+    link: '',
+    images: {
+      mobile: './media/heineken-mobile.jpg',
+      smallDesktop: './media/heineken.jpg',
+    },
+  }, {
     title: 'Honda Shoppers',
     type: 'Web Application',
     year: 2018,
@@ -43,14 +53,22 @@ const config = {
       smallDesktop: './media/mysites.jpg',
     },
   }, {
-    title: 'Isolocity',
-    type: 'Web Application',
-    year: 2015,
-    description: 'EmberJS',
-    link: '',
+    title: 'Nikon I Am',
+    type: 'Microsite',
+    year: 2014,
+    description: 'JQuery',
     images: {
-      mobile: './media/isolocity-mobile.jpg',
-      smallDesktop: './media/isolocity.jpg',
+      mobile: './media/nikon-mobile.jpg',
+      smallDesktop: './media/nikon.jpg',
+    },
+  },  {
+    title: 'Enchant with Airwick',
+    type: 'Contest Website',
+    year: 2014,
+    description: 'JQuery',
+    images: {
+      mobile: './media/airwick-holidays-mobile.jpg',
+      smallDesktop: './media/airwick-holidays.jpg',
     },
   }, {
     title: 'Sandbox Advertising',
@@ -63,14 +81,14 @@ const config = {
       smallDesktop: './media/sandbox.jpg',
     },
   }, {
-    title: 'Heineken Cities',
-    type: 'Microsite',
+    title: 'Isolocity',
+    type: 'Web Application',
     year: 2015,
-    description: 'JQuery',
+    description: 'EmberJS',
     link: '',
     images: {
-      mobile: './media/heineken-mobile.jpg',
-      smallDesktop: './media/heineken.jpg',
+      mobile: './media/isolocity-mobile.jpg',
+      smallDesktop: './media/isolocity.jpg',
     },
   }]
 };
