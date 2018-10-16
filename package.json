@@ -4,7 +4,7 @@
   "description": "Portfolio site for ronniecheung.ca",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --colors --progress -p",
+    "build": "rm -rf build/** && webpack --colors --progress -p",
     "start": "webpack-dev-server --colors --progress --config=./webpack.dev.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

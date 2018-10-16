@@ -1,18 +1,82 @@
-.loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #003973;
-  background-image: url('../media/code-mobile.jpg');
-  background-position: 50% 22.5%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(3px);
+$blue: #003973;
+$white: #fff;
 
-  @media screen and (min-width: 1024px) {
-    background-image: url('../media/code.jpg');
-    background-position: 0 50%;
+$icon-diameter: 40px;
+$icon-border-width: 2px;
+
+@mixin absolutelyCentred {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+};
+
+@keyframes bounce {
+    0 {transform: translateY(0);}
+    40% {transform: translateY(0);}
+    50% {transform: translateY(-75%);}
+    60% {transform: translateY(0);}
+    100% {transform: translateY(0);}
+};
+
+.loader-container {
+  position: relative;
+
+  &__background {
+    height: 100vh;
+    width: 100%;
+    background-color: $white;
+    background-image: url('../media/code-mobile.jpg');
+    background-position: 50% 22.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+
+    @media screen and (min-width: 1024px) {
+      background-image: url('../media/code.jpg');
+      background-position: 0 50%;
+    }
+  }
+}
+
+.loader {
+  @include absolutelyCentred;
+  position: fixed;
+  height: $icon-diameter;
+  width: $icon-diameter;
+  border: $icon-border-width solid $blue;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: none;
+
+  &__segment-container {
+    @include absolutelyCentred;
+    height: 0;
+    line-height: 0;
+    margin-top: -2.5px;
+    white-space: nowrap;
+  }
+
+  &__segment {
+    display: inline-block;
+    background: $blue;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    animation: bounce 1.75s infinite;
+    animation-timing-function: linear;
+
+    & + & {
+      margin-left: 2px;
+    }
+
+    &:nth-child(2) {
+      animation-delay: .25s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: .5s;
+    }
   }
 }

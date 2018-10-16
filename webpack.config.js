@@ -44,11 +44,6 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, 'src/data'),
-        to: path.resolve(__dirname, 'build/data'),
-        force: true,
-      },
-      {
         from: path.resolve(__dirname, 'src/media'),
         to: path.resolve(__dirname, 'build/media'),
         force: true,

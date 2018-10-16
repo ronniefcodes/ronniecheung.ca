@@ -1,4 +1,14 @@
 {
+  "env": {
+    "amd": true
+  },
   "extends": "eslint:recommended",
+  "globals": {
+    "__dirname": true,
+    "document": true,
+    "module": true,
+    "require": true,
+    "window": true
+  },
   "parser": "babel-eslint",
 }
