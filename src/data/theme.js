@@ -28,20 +28,22 @@ const app = {
 const backgrounds = {
   backgroundPosition: '50% 22.5%',
   backgroundSize: 'cover',
+  transition: 'none',
   smallDesktop: {
     backgroundPosition: '0 50%',
   },
 };
 
 const carouselContent = {
-  positionBottom: 'auto',
-  positionLeft: '-100%',
-  positionRight: 'auto',
-  positionTop: '-100%',
+  display: 'none',
 };
 
 const carouselNavButtons = {
   fontColor: _COLORS.black,
+};
+
+const chevrons = {
+  background: _COLORS.black,
 };
 
 const contactInformation = {
@@ -120,6 +122,7 @@ const theme = {
   backgrounds,
   carouselContent,
   carouselNavButtons,
+  chevrons,
   contactInformation,
   fontFamilies,
   headerContainer,
