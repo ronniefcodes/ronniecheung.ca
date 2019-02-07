@@ -29,7 +29,8 @@ const backgrounds = {
 };
 
 const carouselContent = {
-  display: 'none',
+  boxShadow: `-1px -1px 8px 0 ${_COLORS.black}`,
+  visibleOpacity: 0,
 };
 
 const carouselNavButtons = {
@@ -37,6 +38,7 @@ const carouselNavButtons = {
 };
 
 const chevrons = {
+  armActiveBoxShadow: `0 0 2px 0 ${_COLORS.black}`,
   background: _COLORS.black,
 };
 

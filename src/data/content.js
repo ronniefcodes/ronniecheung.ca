@@ -110,7 +110,8 @@ const config = {
       mobile: './media/isolocity-mobile.jpg',
       smallDesktop: './media/isolocity.jpg',
     },
-  }]
+  }],
+  preloadCarouselContent: true,
 };
 
 export default config;
