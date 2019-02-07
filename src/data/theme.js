@@ -30,6 +30,7 @@ const backgrounds = {
 
 const carouselContent = {
   boxShadow: `-1px -1px 8px 0 ${_COLORS.black}`,
+  textAlign: 'left',
   visibleOpacity: 0,
 };
 
