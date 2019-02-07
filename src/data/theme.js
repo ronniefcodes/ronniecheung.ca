@@ -10,12 +10,6 @@ const _FONT_FAMILIES = {
   base: 'Roboto, Helvetica, Arial, sans-serif',
 };
 
-const _ZINDICES = {
-  bottom: 1,
-  middle: 5,
-  top: 10,
-};
-
 const app = {
   backgroundColor: _COLORS.brown,
   backgroundImageUrl: '/media/code-mobile.jpg',

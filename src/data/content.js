@@ -33,6 +33,26 @@ const config = {
       smallDesktop: './media/heineken.jpg',
     },
   }, {
+    title: 'Wysdom.AI',
+    type: 'Website',
+    year: 2019,
+    description: 'Vanilla JS, WordPress',
+    link: '',
+    images: {
+      mobile: './media/wysdom-mobile.jpg',
+      smallDesktop: './media/wysdom.jpg',
+    },
+  }, {
+    title: 'Chernoff Thompson',
+    type: 'Website',
+    year: 2018,
+    description: 'Vanilla JS, WordPress',
+    link: '',
+    images: {
+      mobile: './media/chernoff-thompson-mobile.jpg',
+      smallDesktop: './media/chernoff-thompson.jpg',
+    },
+  }, {
     title: 'Honda Shoppers',
     type: 'Web Application',
     year: 2018,
